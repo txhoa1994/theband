@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3.CSS Template</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <link rel="shortcut icon" href="https://static.centro.org.uk/img/wmca/favicons/android-chrome-36x36.png" type="image/x-icon">
+    <script src="./assets/javascript/main.js"></script>    
+</head>
+<body>
+    <div id="header">
+
+        <!-- Navigation bar -->
+        <ul id="nav">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#band">BAND</a></li>
+            <li><a href="#tour">TOUR</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li>
+                <a href="#">MORE
+                    <i class="ti-angle-down"></i>
+                </a>
+                <ul class="subnav">
+                    <li><a href="">Merchandise</a></li>
+                    <li><a href="">Extras</a></li>
+                    <li><a href="">Media</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- Serch btn -->
+        <div id="search-btn"><i class="ti-search"></i></div>
+
+    </div>
+
+    <div id="slider">
+        <div class="text-slider">
+            <h2 class="text-hd">Chicago</h2>
+            <p class="text-dct">Thank you, Chicago - A night we won't forget.</p>
+        </div>
+
+    </div>
+
+    <div id="content">
+        <div id="band" class="content-band content-width">
+            <h3 class="content-hd">THE BAND</h3>
+            <i class="content-slg">We love music</i>
+            <p class="band-dct">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <ul class="member-list">
+                <li>
+                    <p class="member-name">Name</p>
+                    <img class="member-img" src="/assets/img/member/bandmember.jpg">
+                </li>
+                <li>
+                    <p class="member-name">Name</p>
+                    <img class="member-img" src="/assets/img/member/bandmember.jpg">
+                </li>
+                <li>
+                    <p class="member-name">Name</p>
+                    <img class="member-img" src="/assets/img/member/bandmember.jpg">
+                </li>
+            </ul>
+        </div>
+
+        <div id="tour" class="content-cover-tour">
+            <div class="content-tour content-width">
+                <h3 class="content-hd">TOUR DATES</h3>
+                <i class="content-slg">Remember to book your tickets!</i>
+                <ul class="ticket-qty">
+                    <li class="ticket-month">September
+                        <span class="sold-out">Sold out</span>
+                    </li>
+                    <li class="ticket-month">October
+                        <span class="sold-out">Sold out</span>
+    
+                    </li>
+                    <li class="ticket-month">November
+                        <span class="number-the-rest-ticket">3</span>
+    
+                    </li>
+                </ul>
+                <div class="tour-place">
+                    <div class="tour-each-place">
+                        <img src="/assets/img/place/newyork.jpg" alt="newyork" class="tour-place-img">
+                        <div class="tour-place-content">
+                            <p class="tour-place-hd">New York</p>
+                            <p class="tour-place-date">Fri 27 Nov 2016</p>
+                            <p class="tour-place-dct">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="black-btn">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="tour-each-place">
+                        <img src="/assets/img/place/paris.jpg" alt="paris" class="tour-place-img">
+                        <div class="tour-place-content">
+                            <p class="tour-place-hd">Paris</p>
+                            <p class="tour-place-date">Sat 28 Nov 2016</p>
+                            <p class="tour-place-dct">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="black-btn">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="tour-each-place">
+                        <img src="/assets/img/place/sanfran.jpg" alt="sanfran" class="tour-place-img">
+                        <div class="tour-place-content">
+                            <p class="tour-place-hd">San Francisco</p>
+                            <p class="tour-place-date">Sun 29 Nov 2016</p>
+                            <p class="tour-place-dct">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="black-btn">Buy Tickets</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="content-contact content-width">
+            <h3 class="content-hd">CONTACT</h3>
+            <i class="content-slg">Fan? Drop a note!</i>
+            <div class="contact-detail">
+                <div class="contact-info">
+                    <i class="ti-location-pin"></i>Chicago, US<br>
+                    <i class="ti-mobile"></i>Phone: <a href="tel:+00 151515">+00 151515</a><br>
+                    <i class="ti-email"></i>Email: <a href="mailto:mail@mail.com">mail@mail.com</a>
+                </div>
+
+                <form action="" class="contact-form">
+                    <input type="text" class="row-1-contact-form" required placeholder="Name">
+                    <input type="email" class="row-1-contact-form" required placeholder="Email"><br>
+                    <input type="text" class="row-2-contact-form" required placeholder="Message"><br>
+                    <button type="submit" class="black-btn">SEND</button>
+                </form>
+
+            </div>
+
+        </div>
+        
+        <img src="/assets/img/map/map.jpg" alt="map" id="content-map">
+
+    </div>
+
+    <div id="footer">
+        <div class="footer-icon">
+            <i class="ti-facebook"></i>
+            <i class="ti-instagram"></i>
+            <i class="ti-youtube"></i>
+            <i class="ti-pinterest"></i>
+            <i class="ti-twitter"></i>
+            <i class="ti-linkedin"></i>
+        </div>
+        <div class="footer-copyright">
+            Powered by <a href="#">w3.css</a>
+        </div>
+    </div>
+
+</body>
+</html>

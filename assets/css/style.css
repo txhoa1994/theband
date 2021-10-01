@@ -1,0 +1,324 @@
+/* General */
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.black-btn {
+    font-size: 15px;
+    color: #fff;
+    background-color: #000;
+    line-height: 40px;
+    padding: 0 16px;
+    border: none;
+}
+
+.black-btn:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+/* Main */
+
+#header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 48px;
+    background-color: #000;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav > li {
+    display: inline-block;
+
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav > li > a {
+    color: #fff;
+}
+
+#nav li a {
+    line-height: 48px;
+    font-size: 15px;
+    padding: 0 24px;
+    display: inline-block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+    color: black;
+    background-color: #ccc;
+}
+
+#nav .ti-angle-down {
+    font-size: 13px;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 4px #ccc;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav a {
+    display: block; 
+    color: black;
+    min-width: 160px;
+    height: 38px;
+    padding: 0 16px;
+}
+
+#search-btn {
+    float: right;
+    padding: 0 24px;
+}
+
+#search-btn:hover {
+    background-color: #F44335;
+    cursor: pointer;
+}
+
+#search-btn .ti-search {
+    color: #fff;
+    line-height: 48px;
+}
+
+#slider {
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assets/img/slider/chicago.jpg') top center / cover no-repeat;
+    display: block;
+    position: relative;
+}
+
+#slider .text-slider {
+    color: #fff;
+    position: absolute;
+    bottom: 46px;
+    width: 100%;
+    text-align: center;
+}
+
+.text-slider .text-hd {
+    font-weight: 400;
+}
+
+.text-slider .text-dct {
+    margin-top: 24px;
+    font-weight: 700;
+    text-shadow: 0 0 4px #000;
+}
+
+
+#content .content-width {
+    max-width: 800px;
+    padding: 80px 16px;
+    margin: 0 auto;
+}
+
+#content .content-hd, 
+#content .content-slg {
+    text-align: center;
+}
+
+#content .content-hd {
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+
+#content .content-slg {
+    font-size: 15px;
+    display: block;
+    margin-top: 24px;
+    opacity: .8;
+}
+
+
+
+.content-band .band-dct {
+    text-align: justify;
+    margin-top: 16px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.content-band .member-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.content-band .member-list .member-name {
+    text-align: center;
+    font-size: 15px;
+}
+
+.content-band .member-list .member-img {
+    width: 154px;
+    border-radius: 4px
+}
+
+.content-cover-tour {
+    background-color: #000;
+    color: #fff;
+}
+
+.content-tour .ticket-qty {
+    background-color: #fff;
+    color: #000;
+    line-height: 40px;
+    font-size: 15px;
+    margin-top: 32px;
+}
+
+.content-tour .ticket-qty .ticket-month {
+    padding: 0 16px;
+    border: 1px solid #ccc;
+    color: rgba(0,0,0,.6);
+}
+
+.content-tour .ticket-qty .sold-out {
+    background-color: #f44336;
+    color: #fff;
+    padding: 0 8px;
+    margin: 0 16px;
+}
+
+.content-tour .ticket-qty .number-the-rest-ticket {
+    float: right;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 0px 9px;
+    line-height: 24px;
+    margin: 8px 16px;
+}
+
+.tour-place {
+    display: flex;
+    margin: 32px -8px 0;
+}
+
+.tour-place .tour-each-place {
+    width: 33.333333%;
+    padding: 0 8px;
+    font-size: 15px;
+}
+
+.tour-place .tour-each-place .tour-place-img {
+    width: 100%;
+}
+
+.tour-place .tour-place-content {
+    padding: 16px;
+    color: #000;
+    background-color: #fff;
+}
+
+.tour-place .tour-place-hd {
+    font-weight: 600;
+}
+
+.tour-place .tour-place-date {
+    padding: 16px 0;
+    color: rgba(0,0,0,.6);
+}
+
+.tour-place .tour-place-dct {
+    padding-bottom: 16px;
+}
+
+.content-contact .contact-detail {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.contact-info i {
+    padding: 8px;
+}
+
+.contact-form input {
+    padding: 0 8px;
+    font-size: 15px;
+    line-height: 2;
+}
+
+.contact-form .row-1-contact-form {
+    
+}
+
+.contact-form .row-2-contact-form {
+    width: 100%;
+    margin: 8px 0 16px;
+}
+
+.contact-form > .black-btn {
+    float: right;
+}
+
+#content-map {
+    filter: grayscale(.5);
+    max-width: 100%;
+}
+
+#footer {
+    padding: 64px 0;
+    opacity: .7;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+#footer .footer-icon i {
+    font-size: 24px;
+    display: inline-block;
+    padding: 0 8px;
+}
+
+#footer .footer-icon i:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
+#footer .footer-copyright {
+    margin: 16px 0;
+}
+
+#footer .footer-copyright a {
+    text-decoration: underline;
+    color: blue;
+}
+

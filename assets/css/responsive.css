@@ -1,0 +1,46 @@
+@media (max-width: 739px) {
+    #search-btn,
+    #nav li:last-child {
+        display: none;
+    }
+
+    .content-band .member-list,
+    .tour-place,
+    .content-contact .contact-detail {
+        display: block;
+    }
+
+    .content-band .member-list .member-img {
+        width: 60%;
+        margin-top: 16px;
+        margin-bottom: 32px;
+    }
+
+    .content-band .member-list li {
+        text-align: center;
+    }
+
+    .tour-place .tour-each-place {
+        width: 100%;
+        margin: 16px 0;
+    }
+
+    .contact-form .row-1-contact-form {
+        margin-top: 8px;
+        width: 100%;
+    }
+
+    .black-btn {
+        width: 100%;
+        font-size: 20px;
+        line-height: 46px;
+    }
+}
+
+@media (min-width: 740px) and (max-width:1023px) {
+
+}
+
+@media (min-width: 1024px) {
+
+}
