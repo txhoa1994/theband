@@ -331,6 +331,10 @@ ul {
     cursor: pointer;
 }
 
+.footer-socialnet {
+    color: #444;
+}
+
 #footer .footer-copyright {
     margin: 16px 0;
 }
