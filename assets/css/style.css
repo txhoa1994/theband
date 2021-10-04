@@ -40,6 +40,7 @@ ul {
     height: 48px;
     background-color: #000;
     z-index: 1;
+    
 }
 
 #nav {
@@ -63,6 +64,10 @@ ul {
     line-height: 48px;
     font-size: 15px;
     padding: 0 24px;
+    display: block;
+}
+
+#nav > li:first-child {
     display: inline-block;
 }
 
@@ -103,6 +108,19 @@ ul {
 #search-btn:hover {
     background-color: #F44335;
     cursor: pointer;
+}
+
+#menu-btn {
+    display: none;
+    float: right;
+    padding: 0 24px;
+    color: #fff;
+    line-height: 48px;
+}
+
+#menu-btn:hover {
+    background-color: #ccc;
+    color: #000;
 }
 
 #search-btn .ti-search {
@@ -322,3 +340,102 @@ ul {
     color: blue;
 }
 
+
+.modal {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0,0,0,.3);
+    display: none;
+}
+
+.modal-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal .modal-cover {
+    width: 900px;
+    padding: 0 8px;
+    margin: 0 auto;
+    animation: modalAppear ease-in .3s;
+}
+
+@keyframes modalAppear {
+    from {
+        transform: translateY(-500px);
+        opacity: .2;
+    } to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal .modal-header {
+    height: 129px;
+    background-color: #009688;
+    color: #fff;
+    width: 100%;
+    position: relative;
+    
+}
+
+.modal-header .ti-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 16px;
+}
+
+.modal-header .modal-hd {
+    letter-spacing: 6px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.modal-header .ti-bag {
+    display: inline-block;
+    padding: 0 16px;
+}
+
+.modal .modal-content {
+    height: 342px;
+    background-color: #fff;
+    color: #000;
+    width: 100%;
+    padding: 16px;
+}
+.modal-content .modal-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.modal-content .ticket-info {
+    font-size: 15px;
+}
+
+.modal-content input {
+    height: 40px;
+    font-size: 15px;
+    margin: 16px 0 32px
+}
+
+.modal-content button {
+    background-color: #009688;
+    padding: 16px;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.modal-content button:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.modal-content .modal-need {
+    margin-top: 40px;
+    float: right;
+}

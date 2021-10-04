@@ -1,7 +1,31 @@
 @media (max-width: 739px) {
-    #search-btn,
-    #nav li:last-child {
+    #header {
+        overflow: hidden;
+    }
+
+    #search-btn {
         display: none;
+    }
+
+    #nav, #nav li {
+        display: block;
+    }
+
+    #menu-btn {
+        display: inline-block;
+        position: absolute;
+        top: 0; right: 0;
+    }
+
+    #nav .subnav {
+        position: initial;
+        background-color: #333;
+    }
+    
+    #nav .subnav a {
+        color: #fff;
+        height: 46px;
+        padding: 0 38px;
     }
 
     .content-band .member-list,

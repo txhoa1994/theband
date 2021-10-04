@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
     <link rel="shortcut icon" href="https://static.centro.org.uk/img/wmca/favicons/android-chrome-36x36.png" type="image/x-icon">
-    <script src="./assets/javascript/main.js"></script>    
+       
 </head>
 <body>
     <div id="header">
@@ -25,15 +25,18 @@
                     <i class="ti-angle-down"></i>
                 </a>
                 <ul class="subnav">
-                    <li><a href="">Merchandise</a></li>
-                    <li><a href="">Extras</a></li>
-                    <li><a href="">Media</a></li>
+                    <li><a href="#">Merchandise</a></li>
+                    <li><a href="#">Extras</a></li>
+                    <li><a href="#">Media</a></li>
                 </ul>
             </li>
         </ul>
 
         <!-- Serch btn -->
         <div id="search-btn"><i class="ti-search"></i></div>
+
+        <!-- Menu btn -->
+        <div id="menu-btn"><i class="ti-menu"></i></div>
 
     </div>
 
@@ -90,7 +93,7 @@
                             <p class="tour-place-hd">New York</p>
                             <p class="tour-place-date">Fri 27 Nov 2016</p>
                             <p class="tour-place-dct">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="black-btn">Buy Tickets</button>
+                            <button class="black-btn js-ticket">Buy Tickets</button>
                         </div>
                     </div>
                     <div class="tour-each-place">
@@ -99,7 +102,7 @@
                             <p class="tour-place-hd">Paris</p>
                             <p class="tour-place-date">Sat 28 Nov 2016</p>
                             <p class="tour-place-dct">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="black-btn">Buy Tickets</button>
+                            <button class="black-btn js-ticket">Buy Tickets</button>
                         </div>
                     </div>
                     <div class="tour-each-place">
@@ -108,7 +111,7 @@
                             <p class="tour-place-hd">San Francisco</p>
                             <p class="tour-place-date">Sun 29 Nov 2016</p>
                             <p class="tour-place-dct">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="black-btn">Buy Tickets</button>
+                            <button class="black-btn js-ticket">Buy Tickets</button>
                         </div>
                     </div>
                 </div>
@@ -153,6 +156,28 @@
             Powered by <a href="#">w3.css</a>
         </div>
     </div>
-
+    
+    <div class="modal">
+        <div class="modal-cover">
+            <div class="modal-header modal-center">
+                <div class="modal-close"><i class="ti-close"></i></div>
+                <h2 class="modal-hd"><i class="ti-bag"></i>Tickets</h2>
+            </div>
+            <div class="modal-content">
+                <form action="" class="modal-form">
+                    <label for="ticket-qty" class="ticket-info"><i class="ti-shopping-cart"></i>Tickets, $15 per person
+                    </label>
+                    <input type="text" id="ticket-qty" required placeholder="How many?">
+                    <label for="ticket-send-to" class="ticket-info"><i class="ti-user"></i>Send To</label>
+                    <input type="email" id="ticket-send-to" required placeholder="Enter email">
+                    <button type="submit">PAY <i class="ti-check"></i></button>
+                </form>
+                <p class="modal-need">Need <a href="#">help?</a></p>
+            </div>
+                  
+        </div>
+       
+    </div>
+    <script src="./assets/javascript/main.js"></script>
 </body>
 </html>
